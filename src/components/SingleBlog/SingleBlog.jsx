@@ -1,7 +1,11 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faBookmark} from '@fortawesome/free-solid-svg-icons'
 
 const SingleBlog = (props) => {
-    const { picture, name, authorImage, time, publish, title } = props.blog
+    const { picture, name, authorImage, time, publish, title } = props.blog;
+
+    const handleRead=props.handleRead;
     return (
         <div className='my-3'>
             <div className="card w-full bg-base-100 shadow-xl">
@@ -14,11 +18,12 @@ const SingleBlog = (props) => {
                             <p className='text-[rgba(17,17,17,0.6)]'>{publish}</p>
                         </div>
                     </div>
-                    <p className='text-lg text-[rgba(17,17,17,0.6)]'>{time} min read</p>
+                    <p className='text-lg text-[rgba(17,17,17,0.6)]'>{time} min read <span className='px-2'><FontAwesomeIcon icon={faBookmark} /></span></p>
+
                 </div>
                 <h3 className="text-left my-5  text-[#111111] font-bold text-2xl">{title}</h3>
-        
-                <a className="link text-left text-lg text-[#6047EC] font-semibold">Mark as read</a>
+
+                <a onClick={()=>{handleRead(props.blog)}} className="link text-left text-lg text-[#6047EC] font-semibold">Mark as read</a>
             </div>
         </div>
     );

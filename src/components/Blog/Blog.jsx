@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Cart from '../Cart/Cart';
 import SingleBlog from '../SingleBlog/SingleBlog';
 
 const Blog = () => {
@@ -8,16 +9,20 @@ const Blog = () => {
         .then(res => res.json())
         .then(data => setBlogs(data))
     },[])
+    const handleRead = (blog) =>
+    {
+      console.log(blog)
+    }
     return (
         <div className="grid md:grid-cols-3 mt-10">
             
             <div className='col-span-2'> 
             {
-                blogs.map(blog=><SingleBlog key={blog.id} blog={blog}></SingleBlog>)
+                blogs.map(blog=><SingleBlog key={blog.id} blog={blog} handleRead={handleRead}></SingleBlog>)
             }
             </div>
             <div>
-                <h3>Cart Is Here</h3>
+                 <Cart></Cart>
             </div>
         </div>
     );
