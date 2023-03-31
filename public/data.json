@@ -4,7 +4,7 @@
       "picture": "https://media.istockphoto.com/id/1407012554/photo/web-3-technology-concept-web-3-0-concept-of-decentralized-internet-3d-rendering.jpg?s=1024x1024&w=is&k=20&c=a2n-k3HfOEfczl_VxN0o9zMt1TrJ5-HKPQTecwY5bfM=",
       "name": "Mr. Raju",
       "title":"How to get your first job as a self-taught programmer",
-      "publish":"Mar 14 (4 Days ago)",
+      "publish":"Mar 5 2023",
       "authorImage":"https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?w=996&t=st=1680193057~exp=1680193657~hmac=bf89e5f3c05f034b5e89a44196097deb00619872239cc12098e692ac3368cb75",
       "time": 11
     },
@@ -12,17 +12,17 @@
       "id": "6425af8e893f5905c57b25df",
       "picture": "./images/Rectangle 1.png",
       "name": "Mr. Abram",
-      "title":"How to get your first job as a self-taught programmer",
-      "publish":"Mar 14 (4 Days ago)",  
-      "authorImage":"https://img.freepik.com/free-photo/close-up-handsome-professional-man-cross-arms-chest-looking-confident-camera-smiling-determined-standing-against-white-background_176420-53771.jpg?w=996&t=st=1680193079~exp=1680193679~hmac=520762256e261a9ef058c1cd0155fb1bb8b183c012f6c4499ea22c04d47f9f8c",
+      "title":"Why JavaScript is a Prototype-based OOP",
+      "publish":"Mar 7 2023",  
+      "authorImage":"./images/img-author.png",
       "time": 5
     },
     {
       "id": "6425af8e111a45ca4b1d5f40",
       "picture": "./images/Rectangle 2.png",
       "name": "Hamid Mostofa",
-      "title":"How to get your first job as a self-taught programmer",
-      "publish":"Mar 14 (4 Days ago)",
+      "title":"My evaluation of the Scaleway Cloud provider",
+      "publish":"Mar 10 2023",
       "authorImage":"https://img.freepik.com/premium-photo/brunette-man-wearing-white-shirt-smiling-camera-with-hands-crossed-chest-isolated-white_97712-4232.jpg?w=996",
       "time": 10
     },
@@ -30,8 +30,8 @@
       "id": "6425af8ec27d356d92daa412",
       "picture": "./images/Rectangle 3.png",
       "name": "Isabel Chambers",
-      "title":"How to get your first job as a self-taught programmer",
-      "publish":"Mar 14 (4 Days ago)",
+      "title":"Working with Microservices with NestJS",
+      "publish":"Mar 14 2023",
       "authorImage":"https://img.freepik.com/premium-photo/handsome-confident-bearded-man-standing-formal-suit-with-hands-crossed-chest-smiling-satisfied-attend-party-work-event-standing-white-background_1258-64651.jpg?w=996",
       "time": 12
       
