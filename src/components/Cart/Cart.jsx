@@ -7,8 +7,8 @@ const Cart = ({watchTime}) => {
                 <p className='text-2xl text-[rgba(96,71,236,1)] font-semibold'>Spent Time On Read : {watchTime}</p>
             </div>
 
-            <div>
-                
+            <div className='mt-6 bg-[rgba(17,17,17,0.05)]'>
+                <p className='text-[rgba(17,17,17,1)] font-bold text-2xl'>Bookmarked Blogs :</p>
             </div>
         </div>
     );

@@ -15,12 +15,17 @@ const Blog = () => {
     {
        setWatchTime(watchTime+blog.time);
     }
+
+    const handleBookMark = (blog) =>
+    {
+        console.log(blog);
+    }
     return (
         <div className="grid md:grid-cols-3 mt-10">
             
             <div className='col-span-2'> 
             {
-                blogs.map(blog=><SingleBlog key={blog.id} blog={blog} handleRead={handleRead}></SingleBlog>)
+                blogs.map(blog=><SingleBlog key={blog.id} blog={blog} handleBookMark={handleBookMark} handleRead={handleRead}></SingleBlog>)
             }
             </div>
             <div>
