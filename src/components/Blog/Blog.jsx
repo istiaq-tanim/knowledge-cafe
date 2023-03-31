@@ -4,14 +4,16 @@ import SingleBlog from '../SingleBlog/SingleBlog';
 
 const Blog = () => {
     const [blogs,setBlogs]=useState([]);
+    const [watchTime,setWatchTime]=useState(0)
     useEffect(()=>{
         fetch("data.json")
         .then(res => res.json())
         .then(data => setBlogs(data))
     },[])
+    
     const handleRead = (blog) =>
     {
-      console.log(blog)
+       setWatchTime(watchTime+blog.time);
     }
     return (
         <div className="grid md:grid-cols-3 mt-10">
@@ -22,7 +24,7 @@ const Blog = () => {
             }
             </div>
             <div>
-                 <Cart></Cart>
+                 <Cart watchTime={watchTime}></Cart>
             </div>
         </div>
     );
