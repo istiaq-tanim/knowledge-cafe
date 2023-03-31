@@ -9,7 +9,7 @@ const SingleBlog = (props) => {
     return (
         <div className='my-3'>
             <div className="card w-full bg-base-100 shadow-xl">
-                <figure><img className='h-[400px]' src={picture} alt="Shoes" /></figure>
+                <figure><img className='h-[400px]' src={picture} alt="Shoes"/></figure>
                 <div className='flex justify-between mt-5'>
                     <div className='flex md:gap-4'>
                         <img className="h-16 w-16 md:mx-auto rounded-full" src={authorImage} />
