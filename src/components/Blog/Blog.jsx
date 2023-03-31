@@ -17,10 +17,19 @@ const Blog = () => {
        setWatchTime(watchTime+blog.time);
     }
 
-    const handleBookMark = (blog) =>
+    const handleBookMark = (blog,id) =>
     {
-        const newBookmark=[...bookmark,blog];
-        setBookmark(newBookmark);
+        const isBookMarked=bookmark.find((item)=>item.id===id);
+        if(isBookMarked)
+        {
+            alert("Already Bookmark");
+        }
+        else
+        {
+            const newBookmark=[...bookmark,blog];
+            setBookmark(newBookmark);
+        }
+        
     }
     return (
         <div className="grid md:grid-cols-3 mt-10">
