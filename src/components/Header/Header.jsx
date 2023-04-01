@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <div className="navbar bg-base-100">
             <div className="flex-1">
-                <a className="btn btn-ghost normal-case text-3xl text-bold">Knowledge Cafe</a>
+                <a className="btn btn-ghost text-green-600 normal-case text-3xl text-bold">Dev Cafe</a>
             </div>
             <div className="flex-none gap-2">
                 <div className="dropdown dropdown-end">
