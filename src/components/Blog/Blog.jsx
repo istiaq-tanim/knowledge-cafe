@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import SingleBlog from '../SingleBlog/SingleBlog';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Blog = () => {
     const [blogs,setBlogs]=useState([]);
@@ -22,7 +23,7 @@ const Blog = () => {
         const isBookMarked=bookmark.find((item)=>item.id===id);
         if(isBookMarked)
         {
-            alert("Already Bookmark");
+            toast("You Have Already Bookmarked This Blog")
         }
         else
         {
